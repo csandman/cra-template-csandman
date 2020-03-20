@@ -3,7 +3,7 @@
     "scripts": {
       "lint": "eslint src/**/*.{js,jsx}",
       "format": "prettier --write \"src/**/*.{js,jsx,ts,css,less,scss,vue,json,gql,md}\"",
-      "clean-install": "rm -rf node_modules && rm package-lock.json && npm i"
+      "clean-install": "rm -rf node_modules && rm package-lock.json && rm yarn.lock && npm i && npm audit fix"
     },
     "devDependencies": {
       "eslint": "^6.8.0",
