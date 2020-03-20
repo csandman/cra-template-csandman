@@ -1,0 +1,21 @@
+{
+  "package": {
+    "scripts": {
+      "lint": "eslint src/**/*.{js,jsx}",
+      "format": "prettier --write \"src/**/*.{js,jsx,ts,css,less,scss,vue,json,gql,md}\"",
+      "clean-install": "rm -rf node_modules && rm package-lock.json && npm i"
+    },
+    "devDependencies": {
+      "eslint": "^6.8.0",
+      "eslint-config-airbnb": "^18.1.0",
+      "eslint-config-prettier": "^6.10.0",
+      "eslint-plugin-import": "^2.20.1",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-prettier": "^3.1.2",
+      "eslint-plugin-react": "^7.19.0",
+      "eslint-plugin-react-hooks": "^2.5.1",
+      "node-sass": "^4.13.1",
+      "prettier": "^1.19.1"
+    }
+  }
+}
