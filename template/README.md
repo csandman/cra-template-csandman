@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# cra-template-csandman
+
+This is the base
+[Create React App](https://github.com/facebook/create-react-app). template used
+by me, CSandman.
+
+## Features
+
+This template uses a simple set of default tools to get you up and running
+quickly and have a consistent development environment accross a team. This
+template reflects the guide I wrote on getting set up with React, ESLint, and
+Prettier which [can be read here](https://csandvik.com/react-prettier-eslint/).
+Here is a list of the features used by this template:
+
+- ESLint using the Airbnb style guide
+  - One exception to this is the all lowercase filenames as specified in the
+    Google Javascript styleguide
+- Prettier with mostly defaults other than `"singleQuote"` set to true
+- Absolute imports for your `src/` folder which allows you to import any project
+  files with `import MyComponent from 'components/my-component`
+- SCSS support with `node-sass`
 
 ## Available Scripts
 
-In the project directory, you can run:
+This template offers the following custom scripts in addition to the default
+create-react-app scripts.
 
-### `npm start`
+### `npm run format`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will format all compatible files in the `src/` directory with the included
+`.prettierrc` config.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `npm run lint`
 
-### `npm test`
+This will run eslint on all of the `.js` and `.jsx` files inside of the `src/`
+directory using the config defined in `.eslintrc`.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run clean-install`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This should only be used if you run into any issues with your node_modules
+installation. It is a shortcut to removing your `package-lock.json` (or
+`yarn.lock`) and your `node_modules/` folder and runnning a fresh install.

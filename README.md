@@ -2,7 +2,7 @@
 
 This is the base template used by me, CSandman.
 
-### Features
+## Features
 
 This template uses a simple set of default tools to get you up and running
 quickly and have a consistent development environment accross a team. This
@@ -14,10 +14,10 @@ Here is a list of the features used by this template:
   - One exception to this is the all lowercase filenames as specified in the
     Google Javascript styleguide
 - Prettier with mostly defaults other than `"singleQuote"` set to true
-- Absolute imports for your `/src` folder
+- Absolute imports for your `src/` folder
 - SCSS support with `node-sass`
 
-### Setup
+## Setup
 
 To create a new react app using this templata, run the following command:
 
