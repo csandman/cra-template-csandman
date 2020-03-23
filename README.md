@@ -12,10 +12,14 @@ Here is a list of the features used by this template:
 
 - ESLint using the Airbnb style guide
   - One exception to this is the all lowercase filenames as specified in the
-    Google Javascript styleguide
+    Google Javascript styleguide. I am not sure why Airbnb choose to name all
+    files in the same case as the component but it goes against the pattern of
+    every package I've downloaded from NPM.
 - Prettier with mostly defaults other than `"singleQuote"` set to true
 - Absolute imports for your `src/` folder
 - SCSS support with `node-sass`
+- Barreling for individual components to prevent the import syntax from being
+  `import ComponentA from 'components/component-a/component-a'`
 
 ## Setup
 
