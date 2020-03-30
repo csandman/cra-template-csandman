@@ -1,8 +1,8 @@
 # cra-template-csandman
 
-This is the base
-[Create React App](https://github.com/facebook/create-react-app). template used
-by me, CSandman.
+This is the base template for
+[create-react-app](https://github.com/facebook/create-react-app) created by and
+for [csandman](https://github.com/csandman).
 
 ## Features
 
@@ -14,11 +14,14 @@ Here is a list of the features used by this template:
 
 - ESLint using the Airbnb style guide
   - One exception to this is the all lowercase filenames as specified in the
-    Google Javascript styleguide
+    Google Javascript styleguide. I am not sure why Airbnb chooses to name all
+    files in the same case as the component but it goes against the pattern of
+    every package I've downloaded from NPM.
 - Prettier with mostly defaults other than `"singleQuote"` set to true
-- Absolute imports for your `src/` folder which allows you to import any project
-  files with `import MyComponent from 'components/my-component`
+- Absolute imports for your `src/` folder
 - SCSS support with `node-sass`
+- Barreling for individual components to prevent the import syntax from being
+  `import ComponentA from 'components/component-a/component-a'`
 
 ## Available Scripts
 

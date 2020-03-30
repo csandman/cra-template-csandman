@@ -1,6 +1,8 @@
 # cra-template-csandman
 
-This is the base template used by me, CSandman.
+This is the base template for
+[create-react-app](https://github.com/facebook/create-react-app) created by and
+for [csandman](https://github.com/csandman).
 
 ## Features
 
@@ -12,7 +14,7 @@ Here is a list of the features used by this template:
 
 - ESLint using the Airbnb style guide
   - One exception to this is the all lowercase filenames as specified in the
-    Google Javascript styleguide. I am not sure why Airbnb choose to name all
+    Google Javascript styleguide. I am not sure why Airbnb chooses to name all
     files in the same case as the component but it goes against the pattern of
     every package I've downloaded from NPM.
 - Prettier with mostly defaults other than `"singleQuote"` set to true
@@ -28,3 +30,7 @@ To create a new react app using this templata, run the following command:
 ```
 npx create-react-app my-app-name --template csandman
 ```
+
+Optionally add the flag `--use-npm` if you have yarn installed on your computer
+and prefer to use npm. I am in this boat and just recently learned about this
+flag, so it might help others too.
