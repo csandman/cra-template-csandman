@@ -18,10 +18,17 @@ Here is a list of the features used by this template:
     files in the same case as the component but it goes against the pattern of
     every package I've downloaded from NPM.
 - Prettier with mostly defaults other than `"singleQuote"` set to true
+  - All prettier configs are defined for 2 reasons. The first is that if you're
+    developing on a team, any individual team member's IDE specific settings
+    would override the defaults. And the second is that if you update prettier
+    and they change some of the defaults (like with version 2.0.0) things will
+    start to change in ways you might not want. You can easily change these
+    defaults if you'd like by editing the `.prettierrc` file.
 - Absolute imports for your `src/` folder
 - SCSS support with `node-sass`
 - Barreling for individual components to prevent the import syntax from being
-  `import ComponentA from 'components/component-a/component-a'`
+  `import ComponentA from 'components/component-a/component-a'`. I'm still not
+  sold on this strategy but that redundent import sytax really bugs me.
 
 ## Available Scripts
 
